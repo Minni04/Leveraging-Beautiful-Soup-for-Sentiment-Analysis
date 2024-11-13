@@ -2,7 +2,7 @@
 
   1.Import necessary libraries for web scraping, data manipulation, date handling, sentiment analysis, and plotting.
 
-  2. Set up variables by defining the base URL for news scraping (finviz_url) and a list of stock tickers (e.g., ['AMZN', 'GOOG', 'FB']) to analyze. Initialize an empty dictionary, news_tables, to store scraped news data for each ticker.
+  2. Set up variables by defining the base URL for news scraping (finviz_url) and a list of stock tickers (e.g., ['AMZN', 'GOOG', 'FB']) to analyze. Initialize an empty dictionary, news_tables, to store scraped          news data for each ticker.
 
   3. Fetch news data for each ticker by looping through each ticker in the tickers list:
 
@@ -15,7 +15,7 @@
     Otherwise, use the provided date, update currdate, and store the appropriate date and time values in parsed_data as [ticker, date, time, title].
     Convert parsed data to a DataFrame by creating df from parsed_data with columns ['ticker', 'date', 'time', 'title'].
 
-  6. Initialize the Vader Sentiment Intensity Analyzer to perform sentiment analysis. Define a lambda function to calculate the compound sentiment score for each news title using vader.polarity_scores. Apply this function to the title column in df and create a new column compound to store each title’s sentiment score.
+  6. Initialize the Vader Sentiment Intensity Analyzer to perform sentiment analysis. Define a lambda function to calculate the compound sentiment score for each news title using vader.polarity_scores. Apply this        function to the title column in df and create a new column compound to store each title’s sentiment score.
 
   7. Format the date column by converting df['date'] to a datetime format.
 
